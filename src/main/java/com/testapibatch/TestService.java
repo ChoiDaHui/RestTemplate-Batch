@@ -16,7 +16,7 @@ public class TestService {
     public void create_csv(){
         List<TestDTO> testDTOS = testMapper.read_data();
         try(
-                FileOutputStream fileOutputStream = new FileOutputStream("my_csv.csv");
+                FileOutputStream fileOutputStream = new FileOutputStream("20240102_0504_통계.csv");
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, "MS949");
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 
